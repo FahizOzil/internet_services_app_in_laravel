@@ -60,6 +60,29 @@
             }
         }
     </script>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5VNXT37');</script>
+<!-- End Google Tag Manager -->
+
+ <style>
+        .animate-pulse-scale {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
 </head>
 
 <body onclick="window.location.href='tel:+5123872951'">
@@ -86,14 +109,13 @@
                         class="font-medium hover:text-blue-200 transition duration-300 border-b-2 border-transparent hover:border-blue-200 pb-1">Contact</a>
                 </div>
 
-                {{-- CTA Button --}}
-                <div class="hidden md:block">
-                    <a href="tel:5123872951"
-                        class="bg-white text-blue-600 font-semibold px-20 py-2 rounded-lg shadow hover:bg-blue-50 transition duration-300">
-                         Call Now <i class="fa-solid fa-phone"></i>
-
-                        </a>
-                </div>
+                  <!-- CTA Button -->
+    <div class="hidden md:block">
+        <a href="tel:5123872951"
+            class="animate-pulse-scale bg-white text-blue-600 font-bold text-xl px-12 py-3 rounded-xl shadow-lg hover:bg-blue-50 hover:shadow-xl hover:scale-110 transition-all duration-300 inline-block border-2 border-blue-100">
+             Call Now
+        </a>
+    </div>
 
                 {{-- Mobile menu button --}}
                 <div class="md:hidden">
@@ -139,29 +161,28 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 text-center md:text-left md:pr-12 mb-10 md:mb-0">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight font-cinzel">
-                        Stream, Surf, and <span class="text-blue-200">Connect Like Never Before</span>
+                        Fast Internet & TV Setup | New Home Internet Plans | <span class="text-blue-200">Call Now for TV & WiFi Help</span>
                     </h1>
-                    <p class="text-lg md:text-xl mb-8 text-blue-100 max-w-lg mx-auto md:mx-0">
+                    {{-- <p class="text-lg md:text-xl mb-8 text-blue-100 max-w-lg mx-auto md:mx-0">
                         Blazing-fast internet speeds, crystal-clear cable TV, and exclusive bundle deals designed for
                         modern living.
-                    </p>
-                    <div
-                        class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#partners"
+                    </p> --}}
+                    <div accesskey=""class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        {{-- <a href="#partners"
                             class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition duration-300 shadow-lg transform hover:-translate-y-1">
                             Our Partners
                         </a>
                         <a href="#contact"
                             class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition duration-300">
                             Contact Us
-                        </a>
+                        </a> --}}
                     </div>
                     <a href="tel:+5123872951"
                         class="mt-4 inline-block bg-blue-600 text-white font-semibold py-2 px-20 rounded hover:bg-blue-700">
-                        Call Now <i class="fas fa-phone-alt"></i>
+                        Call Now
                         {{-- <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /> --}}
-        </svg>
+        {{-- </svg> --}}
                     </a>
 
                     {{-- Trust indicators --}}
@@ -824,6 +845,12 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5VNXT37"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 
 </body>

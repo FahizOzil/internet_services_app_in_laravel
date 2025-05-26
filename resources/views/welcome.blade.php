@@ -9,18 +9,15 @@
     <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}" />
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}" />
-    {{-- <link rel="manifest" href="{{ asset('site.webmanifest') }}" crossorigin="use-credentials" /> --}}
+    {{--
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}" crossorigin="use-credentials" /> --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Font Awesome CDN -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- Tailwind CSS CDN -->
@@ -60,29 +57,53 @@
             }
         }
     </script>
-
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M5VNXT37');</script>
-<!-- End Google Tag Manager -->
-
- <style>
+    <style>
         .animate-pulse-scale {
             animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
 
         @keyframes pulse {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.05);
             }
         }
     </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+                    w[l] = w[l] || []; w[l].push({
+                        'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'
+                    }); var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-M5VNXT37');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17041210181"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17041210181');
+    </script>
+
+    <!-- Event snippet for Contact conversion page -->
+    <script>
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17041210181/gTN5CKjmns4aEMX28L0_'
+      });
+    </script>
+
+
 </head>
 
 <body onclick="window.location.href='tel:+5123872951'">
@@ -109,13 +130,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         class="font-medium hover:text-blue-200 transition duration-300 border-b-2 border-transparent hover:border-blue-200 pb-1">Contact</a>
                 </div>
 
-                  <!-- CTA Button -->
-    <div class="hidden md:block">
-        <a href="tel:5123872951"
-            class="animate-pulse-scale bg-white text-blue-600 font-bold text-xl px-12 py-3 rounded-xl shadow-lg hover:bg-blue-50 hover:shadow-xl hover:scale-110 transition-all duration-300 inline-block border-2 border-blue-100">
-             Call Now
-        </a>
-    </div>
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="tel:5123872951"
+                        class="animate-pulse-scale bg-white text-blue-600 font-bold text-xl px-12 py-3 rounded-xl shadow-lg hover:bg-blue-50 hover:shadow-xl hover:scale-110 transition-all duration-300 inline-block border-2 border-blue-100">
+                        Call Now
+                    </a>
+                </div>
 
                 {{-- Mobile menu button --}}
                 <div class="md:hidden">
@@ -141,7 +162,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <a href="#about" class="font-medium hover:bg-blue-600 px-3 py-2 rounded">About</a>
                     <a href="#contact" class="font-medium hover:bg-blue-600 px-3 py-2 rounded">Contact</a>
                     <a href="tel:5123872951"
-                        class="bg-white text-blue-600 font-semibold px-3 py-2 rounded-lg shadow text-center">Call Now</a>
+                        class="bg-white text-blue-600 font-semibold px-3 py-2 rounded-lg shadow text-center">Call
+                        Now</a>
                 </div>
             </div>
         </div>
@@ -161,29 +183,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 text-center md:text-left md:pr-12 mb-10 md:mb-0">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight font-cinzel">
-                        Fast Internet & TV Setup | New Home Internet Plans | <span class="text-blue-200">Call Now for TV & WiFi Help</span>
+                        Fast Internet & TV Setup | New Home Internet Plans | <span class="text-blue-200">Call Now for TV
+                            & WiFi Help</span>
                     </h1>
-                    {{-- <p class="text-lg md:text-xl mb-8 text-blue-100 max-w-lg mx-auto md:mx-0">
-                        Blazing-fast internet speeds, crystal-clear cable TV, and exclusive bundle deals designed for
-                        modern living.
-                    </p> --}}
-                    <div accesskey=""class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                        {{-- <a href="#partners"
-                            class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition duration-300 shadow-lg transform hover:-translate-y-1">
-                            Our Partners
-                        </a>
-                        <a href="#contact"
-                            class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition duration-300">
-                            Contact Us
-                        </a> --}}
+                    <div accesskey=""
+                        class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                     </div>
                     <a href="tel:+5123872951"
-                        class="mt-4 inline-block bg-blue-600 text-white font-semibold py-2 px-20 rounded hover:bg-blue-700">
+                        class="animate-pulse-scale mt-4 inline-block bg-blue-600 text-white font-bold text-xl py-4 px-16 rounded-xl hover:bg-blue-700 hover:scale-110 shadow-lg hover:shadow-xl transition-all duration-300">
                         Call Now
-                        {{-- <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /> --}}
-        {{-- </svg> --}}
                     </a>
+
 
                     {{-- Trust indicators --}}
                     <div class="flex justify-center md:justify-start space-x-6 mt-10">
@@ -355,118 +365,121 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
             <!-- Updated "Check Our Partners" button to "Call Now" -->
-<div class="mt-16 text-center">
-    <a href="tel:5123872951" class="inline-flex items-center px-11 py-4 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition-colors duration-300">
-        Call Now
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-        </svg>
-    </a>
-</div>
+            <div class="mt-16 text-center">
+                <a href="tel:5123872951"
+                    class="inline-flex items-center px-11 py-4 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition-colors duration-300">
+                    Call Now
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
 
-   {{-- Partners Section --}}
-<section id="partners" class="py-20 bg-gradient-to-b from-white to-blue-50">
-    <div class="container mx-auto px-4">
-        {{-- Section Header --}}
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-sm font-bold text-blue-600 uppercase tracking-wider mb-2">Trusted Collaboration</h2>
-            <h3 class="text-4xl font-bold mb-4 text-gray-900">Our Partners</h3>
-            <p class="text-lg text-gray-600">
-                We work with industry leaders to provide you with the best connectivity solutions and services.
-            </p>
+    {{-- Partners Section --}}
+    <section id="partners" class="py-20 bg-gradient-to-b from-white to-blue-50">
+        <div class="container mx-auto px-4">
+            {{-- Section Header --}}
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-sm font-bold text-blue-600 uppercase tracking-wider mb-2">Trusted Collaboration</h2>
+                <h3 class="text-4xl font-bold mb-4 text-gray-900">Our Partners</h3>
+                <p class="text-lg text-gray-600">
+                    We work with industry leaders to provide you with the best connectivity solutions and services.
+                </p>
+            </div>
+
+            {{-- Partners Logo Grid --}}
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+                {{-- Partner 1 - EarthLink --}}
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center">
+                    <div class="h-32 w-40 mb-4 flex items-center justify-center bg-white rounded-lg shadow-inner p-2">
+                        <img src="{{ asset('images/earthlink-logo.jpg') }}" alt="EarthLink logo"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">EarthLink</h4>
+                    <p class="text-gray-600 text-center text-sm mb-3">Reliable internet service provider with nationwide
+                        coverage</p>
+                    <div class="mt-auto">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full font-medium">
+                            Internet Service
+                        </span>
+                    </div>
+                </div>
+
+                {{-- Partner 2 - Frontier --}}
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center">
+                    <div class="h-32 w-40 mb-4 flex items-center justify-center bg-white rounded-lg shadow-inner p-2">
+                        <img src="{{ asset('images/frontier-logo.jpeg') }}" alt="Frontier logo"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">Frontier</h4>
+                    <p class="text-gray-600 text-center text-sm mb-3">High-speed fiber internet and digital TV services
+                    </p>
+                    <div class="mt-auto">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full font-medium">
+                            Fiber Internet
+                        </span>
+                    </div>
+                </div>
+
+                {{-- Partner 3 - Kinetic --}}
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center">
+                    <div class="h-32 w-40 mb-4 flex items-center justify-center bg-white rounded-lg shadow-inner p-2">
+                        <img src="{{ asset('images/kinetic-logo.jpeg') }}" alt="Kinetic logo"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">Kinetic</h4>
+                    <p class="text-gray-600 text-center text-sm mb-3">Advanced fiber technology for homes and businesses
+                    </p>
+                    <div class="mt-auto">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full font-medium">
+                            Fiber Technology
+                        </span>
+                    </div>
+                </div>
+
+                {{-- Partner 4 - Spectrum --}}
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center">
+                    <div class="h-32 w-40 mb-4 flex items-center justify-center bg-white rounded-lg shadow-inner p-2">
+                        <img src="{{ asset('images/spectrum-logo.jpeg') }}" alt="Spectrum logo"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">Spectrum</h4>
+                    <p class="text-gray-600 text-center text-sm mb-3">Cable internet, TV, and mobile services nationwide
+                    </p>
+                    <div class="mt-auto">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full font-medium">
+                            Cable Services
+                        </span>
+                    </div>
+                </div>
+
+                {{-- Partner 5 - DirectvDealer --}}
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center">
+                    <div class="h-32 w-40 mb-4 flex items-center justify-center bg-white rounded-lg shadow-inner p-2">
+                        <img src="{{ asset('images/directvdealer-logo.png') }}" alt="DirectvDealer logo"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">DirectvDealer</h4>
+                    <p class="text-gray-600 text-center text-sm mb-3">Premium satellite TV and streaming entertainment
+                        solutions
+                    </p>
+                    <div class="mt-auto">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full font-medium">
+                            Satellite TV
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        {{-- Partners Logo Grid --}}
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
-            {{-- Partner 1 - EarthLink --}}
-            <div
-                class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center">
-                <div class="h-32 w-40 mb-4 flex items-center justify-center bg-white rounded-lg shadow-inner p-2">
-                    <img src="{{ asset('images/earthlink-logo.jpg') }}" alt="EarthLink logo"
-                        class="w-full h-full object-contain" />
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">EarthLink</h4>
-                <p class="text-gray-600 text-center text-sm mb-3">Reliable internet service provider with nationwide
-                    coverage</p>
-                <div class="mt-auto">
-                    <span class="inline-block bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full font-medium">
-                        Internet Service
-                    </span>
-                </div>
-            </div>
-
-            {{-- Partner 2 - Frontier --}}
-            <div
-                class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center">
-                <div class="h-32 w-40 mb-4 flex items-center justify-center bg-white rounded-lg shadow-inner p-2">
-                    <img src="{{ asset('images/frontier-logo.jpeg') }}" alt="Frontier logo"
-                        class="w-full h-full object-contain" />
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">Frontier</h4>
-                <p class="text-gray-600 text-center text-sm mb-3">High-speed fiber internet and digital TV services
-                </p>
-                <div class="mt-auto">
-                    <span class="inline-block bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full font-medium">
-                        Fiber Internet
-                    </span>
-                </div>
-            </div>
-
-            {{-- Partner 3 - Kinetic --}}
-            <div
-                class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center">
-                <div class="h-32 w-40 mb-4 flex items-center justify-center bg-white rounded-lg shadow-inner p-2">
-                    <img src="{{ asset('images/kinetic-logo.jpeg') }}" alt="Kinetic logo"
-                        class="w-full h-full object-contain" />
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">Kinetic</h4>
-                <p class="text-gray-600 text-center text-sm mb-3">Advanced fiber technology for homes and businesses
-                </p>
-                <div class="mt-auto">
-                    <span class="inline-block bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full font-medium">
-                        Fiber Technology
-                    </span>
-                </div>
-            </div>
-
-            {{-- Partner 4 - Spectrum --}}
-            <div
-                class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center">
-                <div class="h-32 w-40 mb-4 flex items-center justify-center bg-white rounded-lg shadow-inner p-2">
-                    <img src="{{ asset('images/spectrum-logo.jpeg') }}" alt="Spectrum logo"
-                        class="w-full h-full object-contain" />
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">Spectrum</h4>
-                <p class="text-gray-600 text-center text-sm mb-3">Cable internet, TV, and mobile services nationwide
-                </p>
-                <div class="mt-auto">
-                    <span class="inline-block bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full font-medium">
-                        Cable Services
-                    </span>
-                </div>
-            </div>
-
-            {{-- Partner 5 - DirectvDealer --}}
-            <div
-                class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center">
-                <div class="h-32 w-40 mb-4 flex items-center justify-center bg-white rounded-lg shadow-inner p-2">
-                    <img src="{{ asset('images/directvdealer-logo.png') }}" alt="DirectvDealer logo"
-                        class="w-full h-full object-contain" />
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">DirectvDealer</h4>
-                <p class="text-gray-600 text-center text-sm mb-3">Premium satellite TV and streaming entertainment solutions
-                </p>
-                <div class="mt-auto">
-                    <span class="inline-block bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full font-medium">
-                        Satellite TV
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     {{-- About Section --}}
     <section id="about" class="py-20 bg-blue-100">
@@ -552,7 +565,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
 
                         <a href="tel:5123872951"
-                            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1 inline-flex items-center">
+                            class="flex bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1 items-center justify-center">
                             Call Now
                             <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -817,14 +830,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </svg>
                             <span>Georgetown TX 78626</span>
                         </div>
-                       <!-- Updated Footer Contact section -->
-<div class="flex items-start space-x-3">
-    <svg class="h-5 w-5 mt-1 text-blue-200 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-    </svg>
-    <span>Call: +5123872951</span>
-</div>
+                        <!-- Updated Footer Contact section -->
+                        <div class="flex items-start space-x-3">
+                            <svg class="h-5 w-5 mt-1 text-blue-200 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <span>Call: +5123872951</span>
+                        </div>
                         <div class="flex items-start space-x-3">
                             <svg class="h-5 w-5 mt-1 text-blue-200 flex-shrink-0" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -848,10 +862,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5VNXT37"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5VNXT37" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
 
 </body>
+
 </html>
